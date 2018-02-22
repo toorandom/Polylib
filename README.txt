@@ -1,0 +1,51 @@
+<html>
+<body>
+This is intended to be opensource
+i just began it two hours ago so , dont expect much.
+
+just compile
+
+
+gcc *.c -o main
+
+./main
+
+
+check main.c  im using the current functions  (add,mult, exp, poly eval)
+
+I will implement div, gcd, inverse (using a field of characteristic 2) , root calculation.
+
+the way to fill a polynomial_t pointer is
+
+polynomial_t *f;
+
+f->coef[n] is the coef of degree n,  (just integers) 
+
+
+
+API USAGE.
+
+
+poly_mul(a,b,c);  will multiply a*b and put it in c
+
+poly_alloc(10); will return a pointer to a polynomial_t of the formal sum of 10 monomials
+
+poly_exp(a,n,c);   is going to alloc c(x) = (a(x))^n 
+
+poly_print(a); will print a
+
+poly_add(a,b,c); will sum a and b in c
+
+poly_eval(a,2) will return an integer a(2);
+
+poly_sync(a); will fix the degree of the polynomial if a lot of zeroes are considered part of the degree
+
+The result argument (last argument of every function) must have enough memory.
+
+There are warning in compile time , (i have to go , is 23 hrs and im still in office)
+
+Eduardo Ruiz Duarte
+
+toorandom@gmail.com
+</body>
+</html>
